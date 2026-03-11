@@ -80,7 +80,7 @@ export const packages = [
     {
         id: 'egypt-discovery',
         category: 'packages',
-        image: '/assets/images/1.png',
+        image: 'assets/images/1.png',
         badge: { en: 'Packages', ar: 'الباقات' },
         title: { en: 'Egypt Discovery Package', ar: 'باقة اكتشاف مصر' },
         description: { en: 'Explore ancient wonders with our all-inclusive Egypt package including flights, hotels, and tours.', ar: 'استكشف العجائب القديمة مع باقة مصر الشاملة بما في ذلك الرحلات والفنادق والجولات.' },
@@ -94,7 +94,7 @@ export const packages = [
     {
         id: 'travel-world',
         category: 'packages',
-        image: '/assets/images/9.png',
+        image: 'assets/images/9.png',
         badge: { en: 'Packages', ar: 'الباقات' },
         title: { en: 'Travel The World With Adonis', ar: 'سافر حول العالم مع أدونيس' },
         description: { en: "Embark on a journey across continents to witness the world's most iconic landmarks and hidden gems.", ar: 'انطلق في رحلة عبر القارات لمشاهدة أشهر معالم العالم والكنوز المخفية.' },

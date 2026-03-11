@@ -87,7 +87,7 @@ function Navbar() {
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div className="container">
                 <a className="navbar-brand animate__animated animate__fadeInLeft" href="#home" onClick={handleNavClick}>
-                    <img src="/assets/images/Adonis_logo_1.png" alt="Adonis.travel Logo" className="logo-img" />
+                    <img src="assets/images/Adonis_logo_1.png" alt="Adonis.travel Logo" className="logo-img" />
                 </a>
 
                 <button

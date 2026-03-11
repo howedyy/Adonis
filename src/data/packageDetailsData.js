@@ -221,10 +221,10 @@ export const packageDetailsData = {
             ar: ['معالم بارزة عبر 3 قارات', 'إقامة فاخرة في مراكز عالمية كبرى', 'تجارب تبادل ثقافي منسقة', 'جولات خاصة في مواقع اليونسكو', 'تناول طعام فاخر عالمي', 'سفر ولوجستيات متميزة', 'مديرو جولات عالميون خبراء', 'أنشطة وجهات شاملة كلياً'],
         },
         images: [
-            '/assets/images/9.png',
-            '/assets/images/10.png',
-            '/assets/images/11.png',
-            '/assets/images/12.png',
+            'assets/images/9.png',
+            'assets/images/10.png',
+            'assets/images/11.png',
+            'assets/images/12.png',
         ],
     },
     'Security Clearance Services': {
