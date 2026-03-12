@@ -461,6 +461,50 @@ body[dir="rtl"] .about-badge {
     font-size: 1.5rem;
 }
 
+.about-sections-wrapper {
+    margin-top: 1.5rem;
+}
+
+.about-info-block {
+    padding: 1.25rem;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-speed);
+    border-left: 3px solid transparent;
+}
+
+.about-info-block:hover {
+    background: var(--light-gray);
+    border-left-color: var(--primary-red);
+    transform: translateX(10px);
+}
+
+body[dir="rtl"] .about-info-block:hover {
+    border-left-color: transparent;
+    border-right: 3px solid var(--primary-red);
+    transform: translateX(-10px);
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.4rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.info-text p {
+    font-size: 1rem;
+    color: var(--dark-gray);
+    line-height: 1.6;
+    margin: 0;
+}
+
 .about-text {
     font-size: 1rem;
     font-size: clamp(1rem, 1.4vw, 1.3rem);
