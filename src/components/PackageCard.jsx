@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useApp } from '../context/AppContext';
 import { packageDetailsData } from '../data/packageDetailsData';
+import { motion } from 'framer-motion';
 
 function PackageCard({ pkg }) {
     const { language, t, setBookingPackage, setShowBookingModal, setSelectedDetails } = useApp();
@@ -38,11 +39,23 @@ function PackageCard({ pkg }) {
     const hasDetails = pkg.detailKey && packageDetailsData[pkg.detailKey];
 
     return (
-        <div className="col-lg-4 col-md-6 mb-4">
-            <div
-                className={`package-card animate__animated animate__fadeInUp ${hasDetails ? 'clickable-card' : ''}`}
+        <motion.div 
+            className="col-lg-4 col-md-6 mb-4"
+            layout
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.3 }}
+        >
+            <motion.div
+                className={`package-card ${hasDetails ? 'clickable-card' : ''}`}
                 onClick={hasDetails ? handleCardClick : undefined}
                 style={hasDetails ? { cursor: 'pointer' } : {}}
+                whileHover={{ 
+                    y: -15,
+                    boxShadow: "0 25px 50px -12px rgba(220, 20, 60, 0.4)",
+                    transition: { duration: 0.2, ease: "easeOut" }
+                }}
             >
                 <div className="package-image">
                     <img src={pkg.image} alt={t(pkg.title.en, pkg.title.ar)} loading="lazy" />
@@ -76,8 +89,8 @@ function PackageCard({ pkg }) {
                         <i className="fas fa-paper-plane"></i> {t('Contact Us', 'تواصل معنا')}
                     </button>
                 </div>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 }
 

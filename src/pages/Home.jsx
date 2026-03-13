@@ -9,6 +9,8 @@ import BookingModal from '../components/BookingModal';
 import PackageDetailsModal from '../components/PackageDetailsModal';
 import Toast from '../components/Toast';
 
+import ScrollReveal from '../components/ScrollReveal';
+
 function Home() {
     return (
         <>
@@ -18,10 +20,18 @@ function Home() {
             {/* Page Sections */}
             <main>
                 <HeroSection />
-                <AboutSection />
-                <WhyChooseUs />
-                <PackagesSection />
-                <FeedbackSection />
+                <ScrollReveal direction="up">
+                    <AboutSection />
+                </ScrollReveal>
+                <ScrollReveal direction="up" delay={0.2}>
+                    <WhyChooseUs />
+                </ScrollReveal>
+                <ScrollReveal direction="up">
+                    <PackagesSection />
+                </ScrollReveal>
+                <ScrollReveal direction="up">
+                    <FeedbackSection />
+                </ScrollReveal>
             </main>
 
             {/* Footer */}

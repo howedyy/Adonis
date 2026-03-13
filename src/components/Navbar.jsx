@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useApp } from '../context/AppContext';
+import MagneticEffect from './MagneticEffect';
 
 const navCategories = [
     ['accommodation', 'fa-hotel', 'Accommodation', ' الإقامة'],
@@ -86,9 +87,28 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div className="container">
-                <a className="navbar-brand animate__animated animate__fadeInLeft" href="#home" onClick={handleNavClick}>
-                    <img src="assets/images/Adonis_logo_1.png" alt="Adonis.travel Logo" className="logo-img" />
-                </a>
+                <MagneticEffect>
+                    <motion.a 
+                        className="navbar-brand m-0" 
+                        href="#home" 
+                        onClick={handleNavClick}
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                    >
+                        <motion.img 
+                            src="assets/images/Adonis_logo_1.png" 
+                            alt="Adonis.travel Logo" 
+                            className="logo-img" 
+                            whileHover={{ 
+                                scale: 1.15, 
+                                rotate: [0, -5, 5, -5, 0],
+                                filter: "invert(1) hue-rotate(190deg) saturate(3) brightness(1) contrast(1.3) drop-shadow(0px 0px 15px rgba(220, 20, 60, 0.5))"
+                            }}
+                            transition={{ duration: 0.4 }}
+                        />
+                    </motion.a>
+                </MagneticEffect>
 
                 <button
                     className="navbar-toggler"

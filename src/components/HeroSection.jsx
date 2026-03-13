@@ -2,16 +2,17 @@ import { useEffect } from 'react';
 import { useApp } from '../context/AppContext';
 
 const slides = [
-    { src: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=80&w=1600', alt: 'Swiss Alps' },
-    { src: 'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=80&w=1600', alt: 'Pyramids of Giza' },
-    { src: 'https://images.unsplash.com/photo-1641128324972-af3212f0f6bd?auto=format&fit=crop&q=80&w=1600', alt: 'Turkey' },
-    { src: 'https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&q=80&w=1600', alt: 'Luxor Temple' },
-    { src: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=80&w=1600', alt: 'Dubai Skyline' },
-    { src: 'https://images.unsplash.com/photo-1431274172761-fca41d930114?auto=format&fit=crop&q=80&w=1600', alt: 'Eiffel Tower Paris' },
-    { src: 'https://images.unsplash.com/photo-1552832230-c01977dd311b5?auto=format&fit=crop&q=80&w=1600', alt: 'Rome Italy' },
-    { src: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&q=80&w=1600', alt: 'Barcelona Spain' },
-    { src: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&q=80&w=1600', alt: 'London UK' },
+    { src: 'assets/images/hero_orig_1.jpg', alt: 'Swiss Alps' },
+    { src: 'assets/images/hero_orig_2.jpg', alt: 'Pyramids of Giza' },
+    { src: 'assets/images/hero_orig_3.jpg', alt: 'Turkey' },
+    { src: 'assets/images/hero_orig_4.jpg', alt: 'Luxor Temple' },
+    { src: 'assets/images/hero_orig_5.jpg', alt: 'Dubai Skyline' },
+    { src: 'assets/images/hero_orig_6.jpg', alt: 'Eiffel Tower Paris' },
+    { src: 'assets/images/hero_orig_8.jpg', alt: 'Barcelona Spain' },
+    { src: 'assets/images/hero_orig_9.jpg', alt: 'London UK' },
 ];
+
+import { motion } from 'framer-motion';
 
 function HeroSection() {
     const { t } = useApp();
@@ -27,6 +28,26 @@ function HeroSection() {
         }
     }, []);
 
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.3,
+                delayChildren: 0.5
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }
+        }
+    };
+
     return (
         <section id="home" className="hero-section">
             {/* Hero Background Slider */}
@@ -41,11 +62,16 @@ function HeroSection() {
                 </div>
 
                 {/* Scroll Indicator */}
-                <div className="scroll-indicator animate__animated animate__fadeInUp animate__delay-3s">
+                <motion.div 
+                    className="scroll-indicator"
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 0.8, y: 0 }}
+                    transition={{ delay: 2.5, duration: 1 }}
+                >
                     <div className="mouse">
                         <div className="wheel"></div>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
             <div className="hero-overlay"></div>
@@ -63,25 +89,30 @@ function HeroSection() {
             {/* Hero Content */}
             <div className="container hero-content">
                 <div className="row align-items-center min-vh-100">
-                    <div className="col-lg-8 mx-auto text-center">
-                        <h1 className="hero-title animate__animated animate__fadeInDown">
+                    <motion.div 
+                        className="col-lg-8 mx-auto text-center"
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        <motion.h1 className="hero-title" variants={itemVariants}>
                             {t('Discover Your Dream Destination', 'اكتشف وجهتك المثالية')}
-                        </h1>
-                        <p className="hero-subtitle animate__animated animate__fadeInUp animate__delay-1s">
+                        </motion.h1>
+                        <motion.p className="hero-subtitle" variants={itemVariants}>
                             {t(
                                 'Embark on unforgettable journeys with Adonis.travel - Your gateway to extraordinary experiences',
                                 'انطلق في رحلات لا تُنسى مع أدونيس.سفر - بوابتك لتجارب استثنائية'
                             )}
-                        </p>
-                        <div className="hero-buttons animate__animated animate__fadeInUp animate__delay-2s">
+                        </motion.p>
+                        <motion.div className="hero-buttons" variants={itemVariants}>
                             <a href="#packages" className="btn btn-primary btn-lg me-3">
                                 <i className="fas fa-compass"></i> {t('Explore Packages', 'استكشف الباقات')}
                             </a>
                             <a href="#about" className="btn btn-outline-light btn-lg">
                                 <i className="fas fa-info-circle"></i> {t('Learn More', 'اعرف المزيد')}
                             </a>
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 </div>
             </div>
         </section>
