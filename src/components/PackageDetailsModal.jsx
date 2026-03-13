@@ -124,7 +124,7 @@ function PackageDetailsModal() {
                                             <>
                                                 <h6 className="fw-bold mb-3">
                                                     <i className="fas fa-list-check me-2 text-primary"></i>
-                                                    {t('What\'s Included', 'ما المشمول')}
+                                                    {t('Highlights', 'أبرز المميزات')}
                                                 </h6>
                                                 <ul className="highlights-list list-unstyled">
                                                     {(language === 'ar' ? d.highlights.ar : d.highlights.en).map((item, i) => (

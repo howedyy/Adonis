@@ -3,14 +3,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useApp } from '../context/AppContext';
 
 const navCategories = [
-    ['accommodation', 'fa-hotel', 'Accommodation Services', 'خدمات الإقامة'],
+    ['accommodation', 'fa-hotel', 'Accommodation', ' الإقامة'],
     ['flight', 'fa-plane', 'Flight Bookings', 'حجز طيران'],
     ['transfers', 'fa-shuttle-van', 'Airport Transfers', 'انتقالات المطار'],
-    ['visa', 'fa-passport', 'Visa Services', 'خدمات التأشيرات'],
-    ['vip', 'fa-crown', 'VIP Services', 'خدمات كبار الشخصيات'],
+    ['visa', 'fa-passport', 'Visa', ' التأشيرات'],
+    ['vip', 'fa-crown', 'VIP', 'كبار الشخصيات'],
     ['packages', 'fa-box-open', 'Travel Packages', 'الباقات السياحية'],
-    ['hajj-umrah', 'fa-kaaba', 'Hajj & Umrah Services', 'خدمات الحج والعمرة'],
-    ['excursions', 'fa-map-marked-alt', 'Excursions Services', 'خدمات الرحلات السياحية'],
+    ['hajj-umrah', 'fa-kaaba', 'Hajj & Umrah', ' الحج والعمرة'],
+    ['excursions', 'fa-map-marked-alt', 'Excursions', ' الرحلات السياحية'],
 ];
 
 function Navbar() {
