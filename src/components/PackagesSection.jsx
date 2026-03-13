@@ -25,7 +25,7 @@ function PackagesSection() {
 
                 <CategoryFilter />
 
-                <div className="row" id="packagesGrid">
+                <div className="row justify-content-center" id="packagesGrid">
                     {filtered.length > 0 ? (
                         filtered.map(pkg => <PackageCard key={pkg.id} pkg={pkg} />)
                     ) : (

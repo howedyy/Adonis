@@ -114,68 +114,73 @@ export const packageDetailsData = {
             'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=800',
         ],
     },
-    'Business Class Upgrade': {
-        category: { en: 'Flight', ar: 'الرحلات الجوية' },
-        price: 'From $899',
-        duration: { en: 'Premium', ar: 'بريميوم' },
-        capacity: { en: 'Comfort', ar: 'راحة' },
-        description: { en: 'Upgrade to business class for enhanced comfort, priority boarding, premium services, and exclusive lounge access. Transform your journey into a luxurious experience.', ar: 'قم بالترقية إلى درجة رجال الأعمال للحصول على راحة محسنة، وصعود ذو أولوية، وخدمات متميزة، ووصول حصري إلى الصالة. حوّل رحلتك إلى تجربة فاخرة.' },
-        highlights: {
-            en: ['Lie-flat seats with extra legroom', 'Priority check-in and boarding', 'Premium lounge access', 'Gourmet meal service', 'Enhanced entertainment system', 'Amenity kits and comfort items', 'Extra baggage allowance', 'Dedicated cabin crew'],
-            ar: ['مقاعد مسطحة مع مساحة إضافية للأرجل', 'تسجيل الوصول والصعود ذو الأولوية', 'الوصول إلى الصالة المتميزة', 'خدمة وجبات فاخرة', 'نظام ترفيه محسّن', 'مجموعات وسائل الراحة وعناصر الراحة', 'بدل أمتعة إضافي', 'طاقم مقصورة مخصص'],
-        },
-        images: [
-            'https://images.unsplash.com/photo-1540962351504-03099e0a754b?w=800',
-            'https://images.unsplash.com/photo-1464207687429-7505649dae38?w=800',
-            'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800',
-        ],
-    },
-    '5-Star Hotel Inquiry': {
+
+    'WorldWide Accommodation': {
         category: { en: 'Accommodation', ar: 'الإقامة' },
         price: 'From $199/night',
-        duration: { en: '5-Star', ar: '5 نجوم' },
+        duration: { en: 'Worldwide', ar: 'عالمي' },
         capacity: { en: 'Premium', ar: 'بريميوم' },
-        description: { en: 'Inquire about luxury 5-star hotels worldwide with exclusive rates and premium amenities. Experience world-class service, elegant rooms, and exceptional facilities.', ar: 'احجز فنادق فاخرة 5 نجوم في جميع أنحاء العالم بأسعار حصرية ووسائل راحة متميزة. اختبر الخدمة على مستوى عالمي، والغرف الأنيقة، والمرافق الاستثنائية.' },
+        description: { en: 'Explore a wide range of carefully selected hotels in top international destinations. We offer comfortable accommodation options, competitive rates, and reliable booking services to ensure a smooth and enjoyable stay wherever you travel.', ar: 'استكشف مجموعة واسعة من الفنادق المختارة بعناية في أهم الوجهات الدولية. نحن نقدم خيارات إقامة مريحة بأسعار تنافسية وخدمات حجز موثوقة لضمان إقامة سلسة وممتعة أينما سافرت.' },
         highlights: {
-            en: ['Luxury 5-star properties worldwide', 'Exclusive member rates', 'Premium room amenities', 'Concierge services', 'Spa and wellness facilities', 'Fine dining restaurants', 'Business center access', 'Complimentary breakfast'],
-            ar: ['عقارات فاخرة 5 نجوم في جميع أنحاء العالم', 'أسعار الأعضاء الحصرية', 'وسائل راحة الغرف المتميزة', 'خدمات الكونسيرج', 'مرافق السبا والعافية', 'مطاعم راقية', 'الوصول إلى مركز الأعمال', 'إفطار مجاني'],
+            en: [
+                'Wide selection of international hotels in top global destinations',
+                'Competitive rates and exclusive deals with trusted hotel partners',
+                'Boutique, luxury, and business hotel options available',
+                'Easy and secure booking process',
+                'Personalized recommendations based on traveler preferences',
+                '24/7 customer support for booking assistance',
+                'Flexible accommodation options for individuals, families, and groups',
+                'Reliable partnerships with leading international hotel providers'
+            ],
+            ar: [
+                'مجموعة واسعة من الفنادق الدولية في أهم الوجهات العالمية',
+                'أسعار تنافسية وعروض حصرية مع شركاء فنادق موثوقين',
+                'خيارات فنادق بوتيك، فاخرة، وللأعمال متاحة',
+                'عملية حجز سهلة وآمنة',
+                'توصيات مخصصة بناءً على تفضيلات المسافر',
+                'دعم عملاء على مدار الساعة للمساعدة في الحجز',
+                'خيارات إقامة مرنة للأفراد والعائلات والمجموعات',
+                'شراكات موثوقة مع كبار مزودي الفنادق الدوليين'
+            ],
         },
         images: [
             'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800',
-            'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800',
+            'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800',
             'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800',
         ],
     },
-    'Beach Resort Inquiry': {
+    'Egypt Accommodation': {
         category: { en: 'Accommodation', ar: 'الإقامة' },
-        price: 'From $249/night',
-        duration: { en: 'Beachfront', ar: 'على الشاطئ' },
-        capacity: { en: 'All-Inclusive', ar: 'شامل كلياً' },
-        description: { en: 'All-inclusive beach resorts with stunning ocean views and world-class facilities. Enjoy unlimited dining, water sports, entertainment, and relaxation.', ar: 'منتجعات شاطئية شاملة مع إطلالات خلابة على المحيط ومرافق عالمية المستوى. استمتع بتناول الطعام غير المحدود، والرياضات المائية، والترفيه، والاسترخاء.' },
+        price: 'From $99/night',
+        duration: { en: 'Egypt', ar: 'مصر' },
+        capacity: { en: 'Top Rated', ar: 'الأعلى تقييماً' },
+        description: { en: 'Discover a wide range of hotel options across Egypt’s most popular destinations, offering comfort, quality service, and excellent locations. Whether traveling for leisure or business, we provide carefully selected accommodations to ensure a pleasant and memorable stay.', ar: 'اكتشف مجموعة واسعة من خيارات الفنادق في أشهر الوجهات المصرية، والتي توفر الراحة والخدمة عالية الجودة والمواقع الممتازة. سواء كنت تسافر للترفيه أو العمل، فإننا نوفر أماكن إقامة مختارة بعناية لضمان إقامة ممتعة لا تُنسى.' },
         highlights: {
-            en: ['Beachfront location', 'All-inclusive meal plans', 'Multiple pools and water parks', 'Water sports activities', 'Kids club and entertainment', 'Spa and wellness center', 'Nightly shows and activities', 'Private beach access'],
-            ar: ['موقع على الشاطئ', 'خطط وجبات شاملة', 'حمامات سباحة متعددة ومتنزهات مائية', 'أنشطة الرياضات المائية', 'نادي الأطفال والترفيه', 'مركز السبا والعافية', 'عروض وأنشطة ليلية', 'الوصول إلى الشاطئ الخاص'],
+            en: [
+                'Wide selection of hotels across major destinations including Cairo, Sharm El Sheikh, Hurghada, Luxor, and Aswan',
+                'Competitive rates with trusted local hotel partners',
+                'Options ranging from luxury resorts to budget-friendly accommodations',
+                'Hotels suitable for leisure travelers, families, and business trips',
+                'Easy booking and flexible accommodation options',
+                'Special deals for holidays and peak travel seasons',
+                'Reliable customer support and booking assistance',
+                'Access to beachfront resorts, city hotels, and cultural destination stays'
+            ],
+            ar: [
+                'مجموعة واسعة من الفنادق في الوجهات الرئيسية بما في ذلك القاهرة وشرم الشيخ والغردقة والأقصر وأسوان',
+                'أسعار تنافسية مع شركاء فنادق محليين موثوقين',
+                'خيارات تتراوح من المنتجعات الفاخرة إلى أماكن الإقامة الاقتصادية',
+                'فنادق مناسبة للمسافرين بغرض الترفيه والعائلات ورحلات العمل',
+                'حجز سهل وخيارات إقامة مرنة',
+                'عروض خاصة للأعياد ومواسم الذروة السياحية',
+                'دعم عملاء موثوق ومساعدة في الحجز',
+                'الوصول إلى منتجعات شاطئية وفنادق المدن وأماكن الإقامة في الوجهات الثقافية'
+            ],
         },
         images: [
             'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800',
             'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800',
             'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800',
-        ],
-    },
-    'Boutique Hotel Experience': {
-        category: { en: 'Accommodation', ar: 'الإقامة' },
-        price: 'From $149/night',
-        duration: { en: 'Unique', ar: 'فريد' },
-        capacity: { en: 'Personalized', ar: 'شخصي' },
-        description: { en: 'Unique boutique hotels with personalized service and authentic local experiences. Discover charming properties with character, style, and exceptional hospitality.', ar: 'فنادق بوتيك فريدة مع خدمة شخصية وتجارب محلية أصيلة. اكتشف عقارات ساحرة مع الطابع والأسلوب والضيافة الاستثنائية.' },
-        highlights: {
-            en: ['Unique boutique properties', 'Personalized guest service', 'Authentic local design', 'Curated local experiences', 'Artisan breakfast included', 'Intimate atmosphere', 'Central locations', 'Cultural immersion'],
-            ar: ['عقارات بوتيك فريدة', 'خدمة ضيوف شخصية', 'تصميم محلي أصيل', 'تجارب محلية منسقة', 'إفطار حرفي متضمن', 'جو حميم', 'مواقع مركزية', 'الانغماس الثقافي'],
-        },
-        images: [
-            'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800',
-            'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800',
-            'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800',
         ],
     },
     'Premium Hajj & Umrah Package': {
